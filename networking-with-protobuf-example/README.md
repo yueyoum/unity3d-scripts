@@ -11,27 +11,21 @@ It using the origin format to define proto message. This can be compatible with 
 
 1.  Define your proto.
 2.  Compile it for server/client both side
-    
     *   Server side. It's depends what language you are using.
     
         For example, Python:
 
-        ```
-        protoc --python_out=. <YOUR PROTO FILE>
-        ```
+            protoc --python_out=. <YOUR PROTO FILE>
 
     *   Client side.
     
-        ```
-        protoc --descriptor_set_out=msg.protobin --include_imports msg.proto
-        protogen msg.protobin
-        ```
+            protoc --descriptor_set_out=msg.protobin --include_imports msg.proto
+            protogen msg.protobin
 
         then you will get a `msg.cs` file, copy it in you unity3d protject's assert folder.
 
         **NOTE** copy `Google.ProtocolBuffers.dll` too.
 
 3.  Done and test.
-
 
 #### Checkout the example, and have fun.
