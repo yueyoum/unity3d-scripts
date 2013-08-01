@@ -16,7 +16,6 @@ It using the origin format to define proto message. This can be compatible with 
         For example, Python:
 
             protoc --python_out=. <YOUR PROTO FILE>
-
     *   Client side.
     
             protoc --descriptor_set_out=msg.protobin --include_imports msg.proto
