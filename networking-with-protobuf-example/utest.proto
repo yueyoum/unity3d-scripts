@@ -1,0 +1,14 @@
+package CodeBattle;
+
+message Position {
+    required int32 x = 1;
+    required int32 y = 2;
+    required int32 z = 3;
+}
+
+
+message Marine {
+    required int32 id = 1;
+    required int32 hp = 2;
+    required Position position = 3;
+}
